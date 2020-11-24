@@ -6,10 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./body.component.css']
 })
 export class BodyComponent implements OnInit {
-
-  constructor() { }
+  option: number;
+  constructor() {
+    this.option = 0;
+   }
 
   ngOnInit(): void {
+  }
+
+  ShowAssistant(option: number){
+    this.option = option;
   }
 
 }
