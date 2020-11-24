@@ -1,33 +1,38 @@
+
 <div class="container">
     <div class="row">
         <div class="col-sm">
             <div class="card text-white bg-primary mb-3" style="max-width: 18rem;">
-                <div class="card-header">Asistente vistual de Salud</div>
+                <div class="card-header">Asistente virtual de Salud</div>
                 <div class="card-body text-dark bg-light">
                 <h5 class="card-title">Salud</h5>
                 <p class="card-text">Prueba el asistente virtual para el sector de la salud</p>
                 <button class="btn btn-dark" (click)="ShowAssistant(1)">Probar</button>
                 </div>
             </div>
-        
+        </div>
+
+        <div class="col-sm">
             <div class="card text-white bg-success mb-3" style="max-width: 18rem;">
-                <div class="card-header">Asistente vistual de Soporte</div>
+                <div class="card-header">Asistente virtual de Soporte</div>
                 <div class="card-body text-dark bg-light">
                 <h5 class="card-title">Soporte técnico</h5>
                 <p class="card-text">Prueba el asistente virtual para el sector de soporte</p>
                 <button class="btn btn-dark" (click)="ShowAssistant(2)">Probar</button>
                 </div>
             </div>
-        
-            <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
-                <div class="card-header">Asistente vistual de Compras</div>
-                <div class="card-body text-dark bg-light">
-                <h5 class="card-title">Compras</h5>
-                <p class="card-text">Prueba el asistente virtual para el sector de comercio en linea</p>
-                <button class="btn btn-dark" (click)="ShowAssistant(3)">Probar</button>
-                </div>
+        </div>
+        <div class="col-sm">
+        <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+            <div class="card-header">Asistente virtual de Compras</div>
+            <div class="card-body text-dark bg-light">
+            <h5 class="card-title">Compras</h5>
+            <p class="card-text">Prueba el asistente virtual para comercio en linea</p>
+            <button class="btn btn-dark" (click)="ShowAssistant(3)">Probar</button>
             </div>
         </div>
+        </div>
+
         <div class="col-sm">
             <div [ngSwitch]="option">
                 <div *ngSwitchCase="1">
@@ -52,7 +57,6 @@
     
     
 </div>
-
   <div [ngSwitch]="option">
       <div *ngSwitchCase="1"><app-health></app-health></div>
       <div *ngSwitchCase="2"><app-it-support></app-it-support></div>
